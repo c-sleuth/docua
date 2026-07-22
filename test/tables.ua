@@ -17,5 +17,13 @@ Table.Cells {
 }
 Table.Show
 
+Csv ← (
+  $ heading 1,heading 2
+  $ foo,bar
+  $ baz,raz
+)
+Table
+Table.FromCsv Csv
+
 Render
 &fwa "tables.html"

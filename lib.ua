@@ -4,7 +4,7 @@
 
 Heading   ← ˜⊂ □ $"<h_>_</h_>" ◠˜⋅∘ °⋕
 Paragraph ← ˜⊂ □ $"<p>_</p>"
-Break = back join box "<br/>"
+Break     ← ˜⊂ □ "<br/>"
 
 ┌─╴Table ~ Show
   ~ {HeaderRow ← {}|Alignment ← "center"|CellRows ← {}|Cap ← ""}
@@ -12,7 +12,10 @@ Break = back join box "<br/>"
   Cells       ← ⍜⊙Table.CellRows⊂
   Align       ← °⊸Table.Alignment
   Caption     ← °⊸Table.Cap
-  FormatCells = /$"__" inv $"<tr>_</tr>" inv /$"__" inv inv $"<td>_</td>"
+  FormatCells ← /$"__" ⍚$"<tr>_</tr>" ⍚/$"__" ⍚⍚$"<td>_</td>"
+  CsvHeader   ← ⊏ 0
+  CsvCells    ← ⍚°□ ↘ 1
+  FromCsv     ← Table.Cells⍚°□ ↘ 1 ⊙Table.Header⤙⊏ 0 °csv
   Text ← (
     ⊃($"<div data-align=\"_\">" Alignment
     | $"<caption>_</caption>" Cap
@@ -29,7 +32,6 @@ Break = back join box "<br/>"
     )
     ˜⊂ □ $" _ <table> _ <thead> <tr> _ </tr> </thead> <tbody> _ </tbody> </table> </div> "
   )
-
 └─╴
 
 ┌─╴Image ~ Show
