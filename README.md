@@ -64,3 +64,12 @@ Image.Height "10cm" # optional
 Image.Show
 ```
 
+## Blockquote 
+
+Blockquotes can be added like this.
+
+```uiua
+Blockquote "Some quote goes here"
+Blockquote.Cite "Who said it" # optional
+Blockquote.Show
+```
