@@ -22,8 +22,11 @@ Csv ← (
   $ foo,bar
   $ baz,raz
 )
+
 Table
+Table.Caption "csv table"
 Table.FromCsv Csv
+Table.Show
 
 Render
 &fwa "tables.html"

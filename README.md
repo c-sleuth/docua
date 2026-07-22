@@ -50,6 +50,7 @@ Csv ← (
 )
 Table
 Table.FromCsv Csv
+Table.show
 ```
 
 ## Images
