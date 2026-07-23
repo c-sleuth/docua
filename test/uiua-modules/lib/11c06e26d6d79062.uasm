@@ -1,0 +1,364 @@
+{"push":{"empty_boxes":[]}}
+
+DEPENDENCIES
+
+EXPORTS
+Heading 0
+Paragraph 1
+Break 2
+Figure 3
+Text 12
+List 16
+Table 18
+Show 55
+Image 36
+Blockquote 47
+CSS 56
+Render 57
+
+BINDINGS
+func ["Heading",[3,1],0,6963103913266247547,0] 2
+func ["Paragraph",[2,1],1,3091100366349028077,1] 13
+func ["Break",[1,1],2,14411407046257974825,2] 18
+module {"names":{"Body":[{"index":5,"public":true}],"Cap":[{"index":4,"public":true}],"Caption":[{"index":9,"public":true}],"Embed":[{"index":10,"public":true}],"Fields":[{"index":6,"public":true}],"New":[{"index":7,"public":true}],"NoInit":[{"index":8,"public":true}],"Show":[{"index":11,"public":true}]}} 0
+func ["Cap",[1,1],3,844333298443818472,4] 22
+  comment: {"text":"Get Figure's Cap"}
+func ["Body",[1,1],4,9327255550906944553,5] 23
+  comment: {"text":"Get Figure's Body"}
+const [{"b":"Cap"},{"b":"Body"}] 24
+  comment: {"text":"Names of Figure's fields"}
+func ["New",[1,1],5,17722146309024194586,7] 24
+  comment: {"text":"Create a new Figure","sig":{"Ok":{"args":[{"name":"Body"}],"outputs":[{"name":"Figure"}]}}}
+func ["New",[2,1],6,5044272556905169988,8] 24
+  comment: {"text":"Create a new Figure without running initializers","sig":{"Ok":{"args":[{"name":"InitializedCap"},{"name":"Body"}],"outputs":[{"name":"Figure"}]}}}
+func ["Caption",[2,1],7,4888662076012980429,9] 25
+func ["Embed",[1,1],8,3022373709488787851,10] 30
+func ["Show",[2,1],9,12348807204395556812,11] 37
+module {"names":{"Emph":[{"index":15,"public":true}],"Strike":[{"index":13,"public":true}],"Strong":[{"index":14,"public":true}]}} 0
+func ["Strike",[1,1],10,15113037890026120737,13] 46
+func ["Strong",[1,1],11,4049742658498755064,14] 49
+func ["Emph",[1,1],12,9352136333272823792,15] 52
+module {"names":{"Unordered":[{"index":17,"public":true}]}} 0
+func ["Unordered",[0,0],13,11472562197305062424,17] 55
+module {"names":{"Align":[{"index":28,"public":true}],"Alignment":[{"index":20,"public":true}],"Cap":[{"index":22,"public":true}],"Caption":[{"index":29,"public":true}],"CellRows":[{"index":21,"public":true}],"Cells":[{"index":27,"public":true}],"CsvCells":[{"index":32,"public":true}],"CsvHeader":[{"index":31,"public":true}],"Embed":[{"index":34,"public":true}],"Fields":[{"index":23,"public":true}],"FormatCells":[{"index":30,"public":true}],"FromCsv":[{"index":33,"public":true}],"Header":[{"index":26,"public":true}],"HeaderRow":[{"index":19,"public":true}],"New":[{"index":24,"public":true}],"NoInit":[{"index":25,"public":true}],"Show":[{"index":35,"public":true}]}} 0
+func ["HeaderRow",[1,1],14,12360527404291759218,19] 56
+  comment: {"text":"Get Table's HeaderRow"}
+func ["Alignment",[1,1],15,10646061546165908199,20] 58
+  comment: {"text":"Get Table's Alignment"}
+func ["CellRows",[1,1],16,1984159700515313749,21] 59
+  comment: {"text":"Get Table's CellRows"}
+func ["Cap",[1,1],17,9257097913032044567,22] 61
+  comment: {"text":"Get Table's Cap"}
+const [{"b":"HeaderRow"},{"b":"Alignment"},{"b":"CellRows"},{"b":"Cap"}] 62
+  comment: {"text":"Names of Table's fields"}
+func ["New",[0,1],18,713582168009487646,24] 62
+  comment: {"text":"Create a new Table","sig":{"Ok":{"outputs":[{"name":"Table"}]}}}
+func ["New",[4,1],19,10429396247888395614,25] 62
+  comment: {"text":"Create a new Table without running initializers","sig":{"Ok":{"args":[{"name":"InitializedHeaderRow"},{"name":"InitializedAlignment"},{"name":"InitializedCellRows"},{"name":"InitializedCap"}],"outputs":[{"name":"Table"}]}}}
+func ["Header",[2,1],20,13277354721325727505,26] 63
+func ["Cells",[2,1],21,10133697031095231627,27] 68
+func ["Align",[2,1],22,8800472508623670174,28] 73
+func ["Caption",[2,1],23,4375197665053187690,29] 78
+func ["FormatCells",[1,1],24,10215895659993370809,30] 83
+func ["CsvHeader",[1,1],25,997047611602400665,31] 94
+func ["CsvCells",[1,1],26,16380338847241523576,32] 96
+func ["FromCsv",[2,1],27,7701222589362555463,33] 101
+func ["Embed",[1,1],28,15185935920299253983,34] 113
+func ["Show",[2,1],29,11807963114722696829,35] 130
+module {"names":{"DefaultHeight":[{"index":38,"public":true}],"DefaultWidth":[{"index":39,"public":true}],"Embed":[{"index":45,"public":true}],"Fields":[{"index":40,"public":true}],"FilePath":[{"index":37,"public":true}],"Height":[{"index":43,"public":true}],"New":[{"index":41,"public":true}],"NoInit":[{"index":42,"public":true}],"Show":[{"index":46,"public":true}],"Width":[{"index":44,"public":true}]}} 0
+func ["FilePath",[1,1],30,2413573454464013112,37] 149
+  comment: {"text":"Get Image's FilePath"}
+func ["DefaultHeight",[1,1],31,13328436646976336569,38] 150
+  comment: {"text":"Get Image's DefaultHeight"}
+func ["DefaultWidth",[1,1],32,13095982515954832517,39] 151
+  comment: {"text":"Get Image's DefaultWidth"}
+const [{"b":"FilePath"},{"b":"DefaultHeight"},{"b":"DefaultWidth"}] 152
+  comment: {"text":"Names of Image's fields"}
+func ["New",[1,1],33,8014135922094099718,41] 152
+  comment: {"text":"Create a new Image","sig":{"Ok":{"args":[{"name":"FilePath"}],"outputs":[{"name":"Image"}]}}}
+func ["New",[3,1],34,6133038532122608527,42] 152
+  comment: {"text":"Create a new Image without running initializers","sig":{"Ok":{"args":[{"name":"FilePath"},{"name":"InitializedDefaultHeight"},{"name":"InitializedDefaultWidth"}],"outputs":[{"name":"Image"}]}}}
+func ["Height",[2,1],35,9521495493511244349,43] 153
+func ["Width",[2,1],36,12308756705049930737,44] 158
+func ["Embed",[1,1],37,787175711682580897,45] 163
+func ["Show",[2,1],38,13464232399194562610,46] 170
+module {"names":{"Body":[{"index":48,"public":true}],"Citation":[{"index":49,"public":true}],"Cite":[{"index":53,"public":true}],"Embed":[{"index":54,"public":true}],"Fields":[{"index":50,"public":true}],"New":[{"index":51,"public":true}],"NoInit":[{"index":52,"public":true}],"Show":[{"index":55,"public":true}]}} 0
+func ["Body",[1,1],39,15319112697256671825,48] 179
+  comment: {"text":"Get Blockquote's Body"}
+func ["Citation",[1,1],40,18298818051979655139,49] 180
+  comment: {"text":"Get Blockquote's Citation"}
+const [{"b":"Body"},{"b":"Citation"}] 181
+  comment: {"text":"Names of Blockquote's fields"}
+func ["New",[1,1],41,13815463768659153680,51] 181
+  comment: {"text":"Create a new Blockquote","sig":{"Ok":{"args":[{"name":"Body"}],"outputs":[{"name":"Blockquote"}]}}}
+func ["New",[2,1],42,6761631520693390544,52] 181
+  comment: {"text":"Create a new Blockquote without running initializers","sig":{"Ok":{"args":[{"name":"Body"},{"name":"InitializedCitation"}],"outputs":[{"name":"Blockquote"}]}}}
+func ["Cite",[2,1],43,17579024339439325916,53] 182
+func ["Embed",[1,1],44,16313360476297779074,54] 187
+func ["Show",[2,1],45,8344624878956173029,55] 193
+const "html{box-sizing:border-box;background:#e5e5e5}*,*::after,*::before{box-sizing:inherit}body{margin:0;padding:40px 20px;color:#000;background:#e5e5e5;font-family:Calibri, \"Segoe UI\", Arial, sans-serif;font-size:11pt;line-height:1.15}.document{width:210mm;min-height:297mm;margin:0 auto;padding:25.4mm;background:#fff;box-shadow:0 1px 3px rgba(0, 0, 0, 0.12), 0 8px 24px rgba(0, 0, 0, 0.12)}.document p{margin:0 0 8pt}.document h1,.document h2,.document h3,.document h4{margin-top:12pt;margin-bottom:6pt;page-break-after:avoid;break-after:avoid;font-family:Calibri, \"Segoe UI\", Arial, sans-serif;font-weight:400;color:#2f5496}.document h1{font-size:16pt}.document h2{font-size:13pt}.document h3{font-size:12pt}.document h4{font-size:11pt;font-style:italic}.document ol,.document ul{margin-top:0;margin-bottom:8pt;padding-left:36pt}.document li{margin-bottom:3pt}.document a{color:#0563c1;Embed-decoration:underline}.document img{max-width:100%;height:auto}.document table{width:100%;margin:8pt 0;border-collapse:collapse;border-spacing:0;font-size:11pt;page-break-inside:avoid;break-inside:avoid}.document caption{margin-bottom:6pt;font-weight:600;text-align:left}.document td,.document th{padding:5pt 7pt;border:1px solid #a6a6a6;vertical-align:top;text-align:left}.document th{background:#d9e2f3;font-weight:700}.document td p,.document th p{margin:0}.document [data-align=\"left\"]{text-align:left}.document [data-align=\"center\"]{text-align:center}.document [data-align=\"right\"]{text-align:right}.document [data-align=\"justify\"]{text-align:justify}.document blockquote{margin:8pt 36pt;padding-left:12pt;border-left:3px solid #bfbfbf;color:#444}.document hr{margin:12pt 0;border:0;border-top:1px solid #bfbfbf}.page-break{break-before:page;page-break-before:always}@page{size:A4;margin:25.4mm}@media print{body,html{background:#fff}body{padding:0}.document{width:auto;min-height:auto;margin:0;padding:0;box-shadow:none}thead{display:table-header-group}blockquote,img,tr{break-inside:avoid;page-break-inside:avoid}}@media screen and (max-width: 900px){body{padding:16px}.document{width:100%;min-height:auto;padding:clamp(24px, 7vw, 72px)}}" 200
+func ["Render",[1,1],46,9430177568170823055,57] 201
+
+FUNCTIONS
+[{"custom_inverse":[{"normal":{"Ok":[1,1,["UN_PARSE",3]]},"un":[1,1,["PARSE",3]]},4]},["ABOVE",[[2,1,[["FLIP",7],["POP",6],["IDENTITY",5]]]],8],{"format":[["<h",">","</h",">"],9]},["BOX",10],["FLIP",12],["JOIN",11]]
+[{"format":[["<p>","</p>"],14]},["BOX",15],["FLIP",17],["JOIN",16]]
+[{"push":{"b":"<br/>"}},["FLIP",21],["JOIN",20]]
+[{"track_caller":[1,1,[{"push":0},["PICK",22]]]},["UN_BOX",22],{"remove_label":["Cap",22]}]
+[{"track_caller":[1,1,[{"push":1},["PICK",23]]]},["UN_BOX",23],{"remove_label":["Body",23]}]
+{"array":[2,["BRACKET",[[0,1,{"push":[[0],"",{"label":"Cap"}]}],[1,1,{"label":["Body",24]}]],24],true,true,null,24]}
+{"array":[2,["BRACKET",[[1,1,{"label":["Cap",24]}],[1,1,{"label":["Body",24]}]],24],true,true,null,24]}
+{"custom_inverse":[{"normal":{"Ok":[2,1,[["DIP",[[1,0,[{"track_caller":[1,1,[{"push":0},{"copy_to_under":[2,22]},["PICK",22]]]},["UN_BOX",22],{"remove_label":["Cap",22]},["POP",27]]]],27],{"label":["Cap",22]},["BOX",22],{"track_caller":[1,1,[{"pop_under":[2,22]},["UNDO_PICK",22]]]}]]},"un":[1,2,["BY",[[1,1,[["Cap",[1,1],3,844333298443818472,4],26]]],27]]},29]}
+[["FORK",[[1,1,[[["Cap",[1,1],3,844333298443818472,4],31],{"format":[["<figcaption>","</figcaption>"],32]}]],[1,1,[["Body",[1,1],4,9327255550906944553,5],33]]],34],{"format":[["<figure>"," ","</figure>"],35]},["BOX",36]]
+[["FORK",[[1,1,[[["Cap",[1,1],3,844333298443818472,4],38],{"format":[["<figcaption>","</figcaption>"],39]}]],[1,1,[["Body",[1,1],4,9327255550906944553,5],40]]],41],{"format":[["<figure>"," ","</figure>"],42]},["BOX",43],["FLIP",45],["JOIN",44]]
+[{"format":[["<s>","</s>"],47]},["BOX",48]]
+[{"format":[["<strong>","</strong>"],50]},["BOX",51]]
+[{"format":[["<em>","</em>"],53]},["BOX",54]]
+{"e":[]}
+[{"track_caller":[1,1,[{"push":0},["PICK",56]]]},["UN_BOX",56],{"remove_label":["HeaderRow",56]}]
+[{"track_caller":[1,1,[{"push":1},["PICK",58]]]},["UN_BOX",58],{"remove_label":["Alignment",58]}]
+[{"track_caller":[1,1,[{"push":2},["PICK",59]]]},["UN_BOX",59],{"remove_label":["CellRows",59]}]
+[{"track_caller":[1,1,[{"push":3},["PICK",61]]]},["UN_BOX",61],{"remove_label":["Cap",61]}]
+{"array":[4,["BRACKET",[[0,1,{"push":[[0],{"empty_boxes":[]},{"label":"HeaderRow"}]}],[0,1,{"push":[[6],"center",{"label":"Alignment"}]}],[0,1,{"push":[[0],{"empty_boxes":[]},{"label":"CellRows"}]}],[0,1,{"push":[[0],"",{"label":"Cap"}]}]],62],true,true,null,62]}
+{"array":[4,["BRACKET",[[1,1,{"label":["HeaderRow",62]}],[1,1,{"label":["Alignment",62]}],[1,1,{"label":["CellRows",62]}],[1,1,{"label":["Cap",62]}]],62],true,true,null,62]}
+{"custom_inverse":[{"normal":{"Ok":[2,1,[["DIP",[[1,1,[{"track_caller":[1,1,[{"push":0},{"copy_to_under":[2,56]},["PICK",56]]]},["UN_BOX",56],{"remove_label":["HeaderRow",56]}]]],65],["JOIN",66],{"label":["HeaderRow",56]},["BOX",56],{"track_caller":[1,1,[{"pop_under":[2,56]},["UNDO_PICK",56]]]}]]},"un":[1,2,[{"track_caller":[1,1,[{"push":0},{"copy_to_under":[2,56]},["PICK",56]]]},["UN_BOX",56],{"remove_label":["HeaderRow",56]},["UN_JOIN",66],["DIP",[[1,1,[{"label":["HeaderRow",56]},["BOX",56],{"track_caller":[1,1,[{"pop_under":[2,56]},["UNDO_PICK",56]]]}]]],65]]]},67]}
+{"custom_inverse":[{"normal":{"Ok":[2,1,[["DIP",[[1,1,[{"track_caller":[1,1,[{"push":2},{"copy_to_under":[2,59]},["PICK",59]]]},["UN_BOX",59],{"remove_label":["CellRows",59]}]]],70],["JOIN",71],{"label":["CellRows",59]},["BOX",59],{"track_caller":[1,1,[{"pop_under":[2,59]},["UNDO_PICK",59]]]}]]},"un":[1,2,[{"track_caller":[1,1,[{"push":2},{"copy_to_under":[2,59]},["PICK",59]]]},["UN_BOX",59],{"remove_label":["CellRows",59]},["UN_JOIN",71],["DIP",[[1,1,[{"label":["CellRows",59]},["BOX",59],{"track_caller":[1,1,[{"pop_under":[2,59]},["UNDO_PICK",59]]]}]]],70]]]},72]}
+{"custom_inverse":[{"normal":{"Ok":[2,1,[["DIP",[[1,0,[{"track_caller":[1,1,[{"push":1},{"copy_to_under":[2,58]},["PICK",58]]]},["UN_BOX",58],{"remove_label":["Alignment",58]},["POP",75]]]],75],{"label":["Alignment",58]},["BOX",58],{"track_caller":[1,1,[{"pop_under":[2,58]},["UNDO_PICK",58]]]}]]},"un":[1,2,["BY",[[1,1,[["Alignment",[1,1],15,10646061546165908199,20],74]]],75]]},77]}
+{"custom_inverse":[{"normal":{"Ok":[2,1,[["DIP",[[1,0,[{"track_caller":[1,1,[{"push":3},{"copy_to_under":[2,61]},["PICK",61]]]},["UN_BOX",61],{"remove_label":["Cap",61]},["POP",80]]]],80],{"label":["Cap",61]},["BOX",61],{"track_caller":[1,1,[{"pop_under":[2,61]},["UNDO_PICK",61]]]}]]},"un":[1,2,["BY",[[1,1,[["Cap",[1,1],17,9257097913032044567,22],79]]],80]]},82]}
+[["INVENTORY",[[1,1,["INVENTORY",[[1,1,{"format":[["<td>","</td>"],84]}]],85]]],86],["INVENTORY",[[1,1,["REDUCE",[[2,1,{"format":[["","",""],88]}]],87]]],89],["INVENTORY",[[1,1,{"format":[["<tr>","</tr>"],90]}]],91],["REDUCE",[[2,1,{"format":[["","",""],93]}]],92]]
+[{"push":0},["SELECT",95]]
+[{"push":1},["DROP",97],["INVENTORY",[[1,1,{"custom_inverse":[{"normal":{"Ok":[1,1,["UN_BOX",98]]},"un":[1,1,["BOX",98]]},99]}]],100]]
+[{"custom_inverse":[{"normal":{"Ok":[1,1,["UN_CSV",102]]},"un":[1,1,["CSV",102]]},103]},{"push":0},["WITH",[[2,1,["SELECT",104]]],105],["DIP",[[2,1,[["Header",[2,1],20,13277354721325727505,26],106]]],107],{"push":1},["DROP",108],["INVENTORY",[[1,1,{"custom_inverse":[{"normal":{"Ok":[1,1,["UN_BOX",109]]},"un":[1,1,["BOX",109]]},110]}]],111],[["Cells",[2,1],21,10133697031095231627,27],112]]
+[["FORK",[[1,1,[[["Alignment",[1,1],15,10646061546165908199,20],115],{"format":[["<div data-align=\"","\">"],116]}]],[1,1,[[["Cap",[1,1],17,9257097913032044567,22],117],{"format":[["<caption>","</caption>"],118]}]],[1,1,[[["HeaderRow",[1,1],14,12360527404291759218,19],119],["INVENTORY",[[1,1,{"format":[["<th><p>","</p></th>"],120]}]],121],["REDUCE",[[2,1,{"format":[["","",""],123]}]],122]]],[1,1,[[["CellRows",[1,1],16,1984159700515313749,21],124],[["FormatCells",[1,1],24,10215895659993370809,30],125],["REDUCE",[[2,1,{"format":[["","",""],127]}]],126]]]],114],{"format":[[" "," <table> "," <thead> <tr> "," </tr> </thead> <tbody> "," </tbody> </table> </div> "],128]},["BOX",129]]
+[["FORK",[[1,1,[[["Alignment",[1,1],15,10646061546165908199,20],132],{"format":[["<div data-align=\"","\">"],133]}]],[1,1,[[["Cap",[1,1],17,9257097913032044567,22],134],{"format":[["<caption>","</caption>"],135]}]],[1,1,[[["HeaderRow",[1,1],14,12360527404291759218,19],136],["INVENTORY",[[1,1,{"format":[["<th><p>","</p></th>"],137]}]],138],["REDUCE",[[2,1,{"format":[["","",""],140]}]],139]]],[1,1,[[["CellRows",[1,1],16,1984159700515313749,21],141],[["FormatCells",[1,1],24,10215895659993370809,30],142],["REDUCE",[[2,1,{"format":[["","",""],144]}]],143]]]],131],{"format":[[" "," <table> "," <thead> <tr> "," </tr> </thead> <tbody> "," </tbody> </table> </div> "],145]},["BOX",146],["FLIP",148],["JOIN",147]]
+[{"track_caller":[1,1,[{"push":0},["PICK",149]]]},["UN_BOX",149],{"remove_label":["FilePath",149]}]
+[{"track_caller":[1,1,[{"push":1},["PICK",150]]]},["UN_BOX",150],{"remove_label":["DefaultHeight",150]}]
+[{"track_caller":[1,1,[{"push":2},["PICK",151]]]},["UN_BOX",151],{"remove_label":["DefaultWidth",151]}]
+{"array":[3,["BRACKET",[[1,1,{"label":["FilePath",152]}],[0,1,{"push":[[4],"auto",{"label":"DefaultHeight"}]}],[0,1,{"push":[[4],"auto",{"label":"DefaultWidth"}]}]],152],true,true,null,152]}
+{"array":[3,["BRACKET",[[1,1,{"label":["FilePath",152]}],[1,1,{"label":["DefaultHeight",152]}],[1,1,{"label":["DefaultWidth",152]}]],152],true,true,null,152]}
+{"custom_inverse":[{"normal":{"Ok":[2,1,[["DIP",[[1,0,[{"track_caller":[1,1,[{"push":1},{"copy_to_under":[2,150]},["PICK",150]]]},["UN_BOX",150],{"remove_label":["DefaultHeight",150]},["POP",155]]]],155],{"label":["DefaultHeight",150]},["BOX",150],{"track_caller":[1,1,[{"pop_under":[2,150]},["UNDO_PICK",150]]]}]]},"un":[1,2,["BY",[[1,1,[["DefaultHeight",[1,1],31,13328436646976336569,38],154]]],155]]},157]}
+{"custom_inverse":[{"normal":{"Ok":[2,1,[["DIP",[[1,0,[{"track_caller":[1,1,[{"push":2},{"copy_to_under":[2,151]},["PICK",151]]]},["UN_BOX",151],{"remove_label":["DefaultWidth",151]},["POP",160]]]],160],{"label":["DefaultWidth",151]},["BOX",151],{"track_caller":[1,1,[{"pop_under":[2,151]},["UNDO_PICK",151]]]}]]},"un":[1,2,["BY",[[1,1,[["DefaultWidth",[1,1],32,13095982515954832517,39],159]]],160]]},162]}
+[["FORK",[[1,1,[["FilePath",[1,1],30,2413573454464013112,37],165]],[1,1,[["DefaultHeight",[1,1],31,13328436646976336569,38],166]],[1,1,[["DefaultWidth",[1,1],32,13095982515954832517,39],167]]],164],{"format":[["<img src=\"","\" height=\"","\" width=\"","\"/>"],168]},["BOX",169]]
+[["FORK",[[1,1,[["FilePath",[1,1],30,2413573454464013112,37],172]],[1,1,[["DefaultHeight",[1,1],31,13328436646976336569,38],173]],[1,1,[["DefaultWidth",[1,1],32,13095982515954832517,39],174]]],171],{"format":[["<img src=\"","\" height=\"","\" width=\"","\"/>"],175]},["BOX",176],["FLIP",178],["JOIN",177]]
+[{"track_caller":[1,1,[{"push":0},["PICK",179]]]},["UN_BOX",179],{"remove_label":["Body",179]}]
+[{"track_caller":[1,1,[{"push":1},["PICK",180]]]},["UN_BOX",180],{"remove_label":["Citation",180]}]
+{"array":[2,["BRACKET",[[1,1,{"label":["Body",181]}],[0,1,{"push":[[0],"",{"label":"Citation"}]}]],181],true,true,null,181]}
+{"array":[2,["BRACKET",[[1,1,{"label":["Body",181]}],[1,1,{"label":["Citation",181]}]],181],true,true,null,181]}
+{"custom_inverse":[{"normal":{"Ok":[2,1,[["DIP",[[1,0,[{"track_caller":[1,1,[{"push":1},{"copy_to_under":[2,180]},["PICK",180]]]},["UN_BOX",180],{"remove_label":["Citation",180]},["POP",184]]]],184],{"label":["Citation",180]},["BOX",180],{"track_caller":[1,1,[{"pop_under":[2,180]},["UNDO_PICK",180]]]}]]},"un":[1,2,["BY",[[1,1,[["Citation",[1,1],40,18298818051979655139,49],183]]],184]]},186]}
+[["FORK",[[1,1,[["Citation",[1,1],40,18298818051979655139,49],188]],[1,1,[["Body",[1,1],39,15319112697256671825,48],189]]],190],{"format":[["<blockquote cite=\"","\">","</blockquote>"],191]},["BOX",192]]
+[["FORK",[[1,1,[["Citation",[1,1],40,18298818051979655139,49],194]],[1,1,[["Body",[1,1],39,15319112697256671825,48],195]]],196],{"format":[["<blockquote cite=\"","\">","</blockquote>"],197]},["FLIP",199],["JOIN",198]]
+[["REDUCE",[[2,1,{"format":[["","",""],203]}]],202],{"push":"html{box-sizing:border-box;background:#e5e5e5}*,*::after,*::before{box-sizing:inherit}body{margin:0;padding:40px 20px;color:#000;background:#e5e5e5;font-family:Calibri, \"Segoe UI\", Arial, sans-serif;font-size:11pt;line-height:1.15}.document{width:210mm;min-height:297mm;margin:0 auto;padding:25.4mm;background:#fff;box-shadow:0 1px 3px rgba(0, 0, 0, 0.12), 0 8px 24px rgba(0, 0, 0, 0.12)}.document p{margin:0 0 8pt}.document h1,.document h2,.document h3,.document h4{margin-top:12pt;margin-bottom:6pt;page-break-after:avoid;break-after:avoid;font-family:Calibri, \"Segoe UI\", Arial, sans-serif;font-weight:400;color:#2f5496}.document h1{font-size:16pt}.document h2{font-size:13pt}.document h3{font-size:12pt}.document h4{font-size:11pt;font-style:italic}.document ol,.document ul{margin-top:0;margin-bottom:8pt;padding-left:36pt}.document li{margin-bottom:3pt}.document a{color:#0563c1;Embed-decoration:underline}.document img{max-width:100%;height:auto}.document table{width:100%;margin:8pt 0;border-collapse:collapse;border-spacing:0;font-size:11pt;page-break-inside:avoid;break-inside:avoid}.document caption{margin-bottom:6pt;font-weight:600;text-align:left}.document td,.document th{padding:5pt 7pt;border:1px solid #a6a6a6;vertical-align:top;text-align:left}.document th{background:#d9e2f3;font-weight:700}.document td p,.document th p{margin:0}.document [data-align=\"left\"]{text-align:left}.document [data-align=\"center\"]{text-align:center}.document [data-align=\"right\"]{text-align:right}.document [data-align=\"justify\"]{text-align:justify}.document blockquote{margin:8pt 36pt;padding-left:12pt;border-left:3px solid #bfbfbf;color:#444}.document hr{margin:12pt 0;border:0;border-top:1px solid #bfbfbf}.page-break{break-before:page;page-break-before:always}@page{size:A4;margin:25.4mm}@media print{body,html{background:#fff}body{padding:0}.document{width:auto;min-height:auto;margin:0;padding:0;box-shadow:none}thead{display:table-header-group}blockquote,img,tr{break-inside:avoid;page-break-inside:avoid}}@media screen and (max-width: 900px){body{padding:16px}.document{width:100%;min-height:auto;padding:clamp(24px, 7vw, 72px)}}"},{"format":[["<html> <head><style>","</style></head><body><main class=\"document\">","</main></body> </html>"],204]}]
+
+INDEX MACROS
+
+CODE MACROS
+
+SPANS
+file0 [3,1,17,17] [3,3,19,19]
+file0 [5,1,57,57] [5,8,64,64]
+file0 [5,38,109,94] [5,39,112,95]
+file0 [5,37,107,93] [5,38,109,94]
+file0 [5,35,103,91] [5,36,106,92]
+file0 [5,34,100,90] [5,35,103,91]
+file0 [5,33,98,89] [5,34,100,90]
+file0 [5,32,95,88] [5,33,98,89]
+file0 [5,18,81,74] [5,31,94,87]
+file0 [5,16,77,72] [5,17,80,73]
+file0 [5,14,73,70] [5,15,76,71]
+file0 [5,13,71,69] [5,14,73,70]
+file0 [6,1,113,96] [6,10,122,105]
+file0 [6,18,137,113] [6,29,148,124]
+file0 [6,16,133,111] [6,17,136,112]
+file0 [6,14,129,109] [6,15,132,110]
+file0 [6,13,127,108] [6,14,129,109]
+file0 [7,1,149,125] [7,6,154,130]
+file0 [7,16,169,140] [7,17,172,141]
+file0 [7,14,165,138] [7,15,168,139]
+file0 [7,13,163,137] [7,14,165,138]
+file0 [10,6,198,167] [10,9,201,170]
+file0 [10,17,209,178] [10,21,213,182]
+file0 [10,3,195,164] [10,4,196,165]
+file0 [11,3,217,186] [11,10,224,193]
+file0 [11,27,241,210] [11,30,244,213]
+file0 [11,17,231,200] [11,19,233,202]
+file0 [11,17,231,200] [11,30,244,213]
+file0 [11,14,228,197] [11,16,230,199]
+file0 [12,3,247,216] [12,8,252,221]
+file0 [13,46,302,271] [13,49,305,274]
+file0 [13,10,266,235] [13,39,295,264]
+file0 [13,57,313,282] [13,61,317,286]
+file0 [13,5,261,230] [13,9,265,234]
+file0 [14,9,327,296] [14,32,350,319]
+file0 [14,5,323,292] [14,8,326,295]
+file0 [16,3,357,326] [16,7,361,330]
+file0 [17,46,411,380] [17,49,414,383]
+file0 [17,10,375,344] [17,39,404,373]
+file0 [17,57,422,391] [17,61,426,395]
+file0 [17,5,370,339] [17,9,374,343]
+file0 [18,19,446,415] [18,42,469,438]
+file0 [18,15,442,411] [18,18,445,414]
+file0 [18,10,437,406] [18,14,441,410]
+file0 [18,5,432,401] [18,9,436,405]
+file0 [23,3,490,459] [23,9,496,465]
+file0 [23,16,503,472] [23,27,514,483]
+file0 [23,12,499,468] [23,15,502,471]
+file0 [24,3,518,487] [24,9,524,493]
+file0 [24,16,531,500] [24,37,552,521]
+file0 [24,12,527,496] [24,15,530,499]
+file0 [25,3,555,524] [25,7,559,528]
+file0 [25,14,566,535] [25,27,579,548]
+file0 [25,10,562,531] [25,13,565,534]
+file0 [29,3,596,565] [29,12,605,574]
+file0 [36,6,648,611] [36,15,657,620]
+file0 [36,18,662,623] [36,20,664,625]
+file0 [36,21,665,626] [36,30,674,635]
+file0 [36,42,688,647] [36,50,696,655]
+file0 [36,53,701,658] [36,55,703,660]
+file0 [36,56,704,661] [36,59,707,664]
+file0 [36,3,645,608] [36,4,646,609]
+file0 [37,3,718,673] [37,9,724,679]
+file0 [37,25,746,695] [37,34,755,704]
+file0 [37,18,737,688] [37,19,740,689]
+file0 [37,34,755,704] [37,35,758,705]
+file0 [37,17,734,687] [37,18,737,688]
+file0 [38,3,761,708] [38,8,766,713]
+file0 [38,25,789,730] [38,33,797,738]
+file0 [38,18,780,723] [38,19,783,724]
+file0 [38,33,797,738] [38,34,800,739]
+file0 [38,17,777,722] [38,18,780,723]
+file0 [39,3,803,742] [39,8,808,747]
+file0 [39,25,830,764] [39,34,839,773]
+file0 [39,18,821,757] [39,19,824,758]
+file0 [39,18,821,757] [39,34,839,773]
+file0 [39,17,819,756] [39,18,821,757]
+file0 [40,3,842,776] [40,10,849,783]
+file0 [40,25,869,798] [40,28,872,801]
+file0 [40,18,860,791] [40,19,863,792]
+file0 [40,18,860,791] [40,28,872,801]
+file0 [40,17,858,790] [40,18,860,791]
+file0 [41,3,875,804] [41,14,886,815]
+file0 [41,49,931,850] [41,62,944,863]
+file0 [41,48,928,849] [41,49,931,850]
+file0 [41,47,925,848] [41,48,928,849]
+file0 [41,40,918,841] [41,41,919,842]
+file0 [41,41,919,842] [41,46,924,847]
+file0 [41,39,915,840] [41,40,918,841]
+file0 [41,25,901,826] [41,38,914,839]
+file0 [41,24,898,825] [41,25,901,826]
+file0 [41,17,891,818] [41,18,892,819]
+file0 [41,18,892,819] [41,23,897,824]
+file0 [42,3,947,866] [42,12,956,875]
+file0 [42,17,963,880] [42,18,966,881]
+file0 [43,3,971,886] [43,11,979,894]
+file0 [43,21,996,904] [43,22,999,905]
+file0 [43,19,992,902] [43,20,995,903]
+file0 [43,18,990,901] [43,19,992,902]
+file0 [43,17,987,900] [43,18,990,901]
+file0 [44,3,1004,910] [44,10,1011,917]
+file0 [44,55,1072,962] [44,58,1075,965]
+file0 [44,54,1070,961] [44,55,1072,962]
+file0 [44,50,1064,957] [44,51,1067,958]
+file0 [44,49,1061,956] [44,50,1064,957]
+file0 [44,43,1055,950] [44,49,1061,956]
+file0 [44,36,1046,943] [44,37,1049,944]
+file0 [44,32,1040,939] [44,33,1043,940]
+file0 [44,30,1036,937] [44,31,1039,938]
+file0 [44,29,1034,936] [44,30,1036,937]
+file0 [44,28,1031,935] [44,29,1034,936]
+file0 [44,23,1026,930] [44,28,1031,935]
+file0 [45,3,1078,968] [45,8,1083,973]
+file0 [46,5,1094,982] [46,6,1097,983]
+file0 [46,33,1124,1010] [46,42,1133,1019]
+file0 [46,7,1098,984] [46,32,1123,1009]
+file0 [47,31,1164,1050] [47,34,1167,1053]
+file0 [47,7,1140,1026] [47,30,1163,1049]
+file0 [48,36,1205,1089] [48,45,1214,1098]
+file0 [48,15,1184,1068] [48,35,1204,1088]
+file0 [48,14,1181,1067] [48,15,1184,1068]
+file0 [48,7,1174,1060] [48,8,1175,1061]
+file0 [48,8,1175,1061] [48,13,1180,1066]
+file0 [49,26,1240,1124] [49,34,1248,1132]
+file0 [49,14,1228,1112] [49,25,1239,1123]
+file0 [49,7,1221,1105] [49,8,1222,1106]
+file0 [49,8,1222,1106] [49,13,1227,1111]
+file0 [51,7,1263,1145] [51,88,1344,1226]
+file0 [51,5,1259,1143] [51,6,1262,1144]
+file0 [53,3,1351,1233] [53,7,1355,1237]
+file0 [54,5,1366,1246] [54,6,1369,1247]
+file0 [54,33,1396,1274] [54,42,1405,1283]
+file0 [54,7,1370,1248] [54,32,1395,1273]
+file0 [55,31,1436,1314] [55,34,1439,1317]
+file0 [55,7,1412,1290] [55,30,1435,1313]
+file0 [56,36,1477,1353] [56,45,1486,1362]
+file0 [56,15,1456,1332] [56,35,1476,1352]
+file0 [56,14,1453,1331] [56,15,1456,1332]
+file0 [56,7,1446,1324] [56,8,1447,1325]
+file0 [56,8,1447,1325] [56,13,1452,1330]
+file0 [57,26,1512,1388] [57,34,1520,1396]
+file0 [57,14,1500,1376] [57,25,1511,1387]
+file0 [57,7,1493,1369] [57,8,1494,1370]
+file0 [57,8,1494,1370] [57,13,1499,1375]
+file0 [59,10,1541,1412] [59,91,1622,1493]
+file0 [59,8,1537,1410] [59,9,1540,1411]
+file0 [59,6,1533,1408] [59,7,1536,1409]
+file0 [59,5,1531,1407] [59,6,1533,1408]
+file0 [64,6,1665,1524] [64,14,1673,1532]
+file0 [64,15,1674,1533] [64,28,1687,1546]
+file0 [64,38,1699,1556] [64,50,1711,1568]
+file0 [64,3,1662,1521] [64,4,1663,1522]
+file0 [65,3,1726,1581] [65,9,1732,1587]
+file0 [65,20,1748,1598] [65,33,1761,1611]
+file0 [65,13,1739,1591] [65,14,1742,1592]
+file0 [65,13,1739,1591] [65,33,1761,1611]
+file0 [65,12,1737,1590] [65,13,1739,1591]
+file0 [66,3,1764,1614] [66,8,1769,1619]
+file0 [66,20,1786,1631] [66,32,1798,1643]
+file0 [66,13,1777,1624] [66,14,1780,1625]
+file0 [66,13,1777,1624] [66,32,1798,1643]
+file0 [66,12,1775,1623] [66,13,1777,1624]
+file0 [67,3,1801,1646] [67,8,1806,1651]
+file0 [68,5,1817,1660] [68,6,1820,1661]
+file0 [68,13,1827,1668] [68,21,1835,1676]
+file0 [68,28,1842,1683] [68,41,1855,1696]
+file0 [68,48,1862,1703] [68,60,1874,1715]
+file0 [69,7,1884,1723] [69,51,1928,1767]
+file0 [69,5,1880,1721] [69,6,1883,1722]
+file0 [71,3,1935,1774] [71,7,1939,1778]
+file0 [72,5,1950,1787] [72,6,1953,1788]
+file0 [72,13,1960,1795] [72,21,1968,1803]
+file0 [72,28,1975,1810] [72,41,1988,1823]
+file0 [72,48,1995,1830] [72,60,2007,1842]
+file0 [73,17,2027,1860] [73,61,2071,1904]
+file0 [73,15,2023,1858] [73,16,2026,1859]
+file0 [73,10,2018,1853] [73,14,2022,1857]
+file0 [73,5,2013,1848] [73,9,2017,1852]
+file0 [78,6,2119,1940] [78,10,2123,1944]
+file0 [78,11,2124,1945] [78,19,2132,1953]
+file0 [78,3,2116,1937] [78,4,2117,1938]
+file0 [79,3,2143,1962] [79,7,2147,1966]
+file0 [79,23,2168,1982] [79,31,2176,1990]
+file0 [79,11,2154,1970] [79,12,2157,1971]
+file0 [79,11,2154,1970] [79,31,2176,1990]
+file0 [79,10,2152,1969] [79,11,2154,1970]
+file0 [80,3,2179,1993] [80,8,2184,1998]
+file0 [81,18,2210,2020] [81,26,2218,2028]
+file0 [81,38,2230,2040] [81,42,2234,2044]
+file0 [81,5,2195,2007] [81,6,2198,2008]
+file0 [82,7,2244,2052] [82,47,2284,2092]
+file0 [82,5,2240,2050] [82,6,2243,2051]
+file0 [84,3,2291,2099] [84,7,2295,2103]
+file0 [85,18,2321,2125] [85,26,2329,2133]
+file0 [85,38,2341,2145] [85,42,2345,2149]
+file0 [85,5,2306,2112] [85,6,2309,2113]
+file0 [86,15,2361,2165] [86,55,2401,2205]
+file0 [86,10,2356,2160] [86,14,2360,2164]
+file0 [86,5,2351,2155] [86,9,2355,2159]
+file0 [90,1,2417,2215] [90,4,2420,2218]
+file0 [92,1,4564,4360] [92,7,4570,4366]
+file0 [93,3,4579,4373] [93,4,4580,4374]
+file0 [93,4,4580,4374] [93,9,4585,4379]
+file0 [95,3,4650,4444] [95,96,4743,4537]
+
+FILES
+../lib.ua: "# Experimental!\n\n{} # this holds all the generated html\n\nHeading   ← ˜⊂ □ $\"<h_>_</h_>\" ◠˜⋅∘ °⋕\nParagraph ← ˜⊂ □ $\"<p>_</p>\"\nBreak     ← ˜⊂ □ \"<br/>\"\n\n--- Figure\n  ~ {Cap = \"\" | Body}\n  Caption  = un by Figure.Cap\n  Embed = (\n    fork($\"<figcaption>_</figcaption>\"Figure.Cap|Figure.Body)\n    box $\"<figure>_ _</figure>\"\n  )\n  Show = (\n    fork($\"<figcaption>_</figcaption>\"Figure.Cap|Figure.Body)\n    back join box $\"<figure>_ _</figure>\"\n  )\n---\n\n--- Text\n  Strike = box $\"<s>_</s>\" \n  Strong = box $\"<strong>_</strong>\"\n  Emph = box $\"<em>_</em>\"\n---\n\n--- List\n  Unordered = (\n  )\n\n---\n\n\n┌─╴Table ~ Show\n  ~ {HeaderRow ← {}|Alignment ← \"center\"|CellRows ← {}|Cap ← \"\"}\n  Header      ← ⍜⊙Table.HeaderRow⊂\n  Cells       ← ⍜⊙Table.CellRows⊂\n  Align       ← °⊸Table.Alignment\n  Caption     ← °⊸Table.Cap\n  FormatCells ← /$\"__\" ⍚$\"<tr>_</tr>\" ⍚/$\"__\" ⍚⍚$\"<td>_</td>\"\n  CsvHeader   ← ⊏ 0\n  CsvCells    ← ⍚°□ ↘ 1\n  FromCsv     ← Table.Cells⍚°□ ↘ 1 ⊙Table.Header⤙⊏ 0 °csv\n  Embed ← (\n    ⊃($\"<div data-align=\\\"_\\\">\" Alignment\n    | $\"<caption>_</caption>\" Cap\n    | /$\"__\" ⍚$\"<th><p>_</p></th>\" HeaderRow\n    | /$\"__\" FormatCells CellRows\n    )\n    □ $\" _ <table> _ <thead> <tr> _ </tr> </thead> <tbody> _ </tbody> </table> </div> \"\n  )\n  Show ← (\n    ⊃($\"<div data-align=\\\"_\\\">\" Alignment\n    | $\"<caption>_</caption>\" Cap\n    | /$\"__\" ⍚$\"<th><p>_</p></th>\" HeaderRow\n    | /$\"__\" FormatCells CellRows\n    )\n    ˜⊂ □ $\" _ <table> _ <thead> <tr> _ </tr> </thead> <tbody> _ </tbody> </table> </div> \"\n  )\n└─╴\n\n┌─╴Image ~ Show\n  ~ {FilePath DefaultHeight ← \"auto\"|DefaultWidth ← \"auto\"}\n  Height ← °⊸Image.DefaultHeight\n  Width  ← °⊸Image.DefaultWidth\n  Embed ← (\n    ⊃(Image.FilePath|Image.DefaultHeight|Image.DefaultWidth)\n    □ $\"<img src=\\\"_\\\" height=\\\"_\\\" width=\\\"_\\\"/>\"\n  )\n  Show ← (\n    ⊃(Image.FilePath|Image.DefaultHeight|Image.DefaultWidth)\n    back join □ $\"<img src=\\\"_\\\" height=\\\"_\\\" width=\\\"_\\\"/>\"\n  )\n└─╴\n\n┌─╴Blockquote ~ Show\n  ~ {Body Citation ← \"\"}\n  Cite ← °⊸Blockquote.Citation\n  Embed ← (\n    ⊃(Blockquote.Citation|Blockquote.Body)\n    □ $\"<blockquote cite=\\\"_\\\">_</blockquote>\"\n  )\n  Show ← (\n    ⊃(Blockquote.Citation|Blockquote.Body)\n    back join $\"<blockquote cite=\\\"_\\\">_</blockquote>\"\n  )\n└─╴\n\nCSS ← $ html{box-sizing:border-box;background:#e5e5e5}*,*::after,*::before{box-sizing:inherit}body{margin:0;padding:40px 20px;color:#000;background:#e5e5e5;font-family:Calibri, \"Segoe UI\", Arial, sans-serif;font-size:11pt;line-height:1.15}.document{width:210mm;min-height:297mm;margin:0 auto;padding:25.4mm;background:#fff;box-shadow:0 1px 3px rgba(0, 0, 0, 0.12), 0 8px 24px rgba(0, 0, 0, 0.12)}.document p{margin:0 0 8pt}.document h1,.document h2,.document h3,.document h4{margin-top:12pt;margin-bottom:6pt;page-break-after:avoid;break-after:avoid;font-family:Calibri, \"Segoe UI\", Arial, sans-serif;font-weight:400;color:#2f5496}.document h1{font-size:16pt}.document h2{font-size:13pt}.document h3{font-size:12pt}.document h4{font-size:11pt;font-style:italic}.document ol,.document ul{margin-top:0;margin-bottom:8pt;padding-left:36pt}.document li{margin-bottom:3pt}.document a{color:#0563c1;Embed-decoration:underline}.document img{max-width:100%;height:auto}.document table{width:100%;margin:8pt 0;border-collapse:collapse;border-spacing:0;font-size:11pt;page-break-inside:avoid;break-inside:avoid}.document caption{margin-bottom:6pt;font-weight:600;text-align:left}.document td,.document th{padding:5pt 7pt;border:1px solid #a6a6a6;vertical-align:top;text-align:left}.document th{background:#d9e2f3;font-weight:700}.document td p,.document th p{margin:0}.document [data-align=\"left\"]{text-align:left}.document [data-align=\"center\"]{text-align:center}.document [data-align=\"right\"]{text-align:right}.document [data-align=\"justify\"]{text-align:justify}.document blockquote{margin:8pt 36pt;padding-left:12pt;border-left:3px solid #bfbfbf;color:#444}.document hr{margin:12pt 0;border:0;border-top:1px solid #bfbfbf}.page-break{break-before:page;page-break-before:always}@page{size:A4;margin:25.4mm}@media print{body,html{background:#fff}body{padding:0}.document{width:auto;min-height:auto;margin:0;padding:0;box-shadow:none}thead{display:table-header-group}blockquote,img,tr{break-inside:avoid;page-break-inside:avoid}}@media screen and (max-width: 900px){body{padding:16px}.document{width:100%;min-height:auto;padding:clamp(24px, 7vw, 72px)}}\n\nRender ← (\n  /$\"__\"\n  CSS # TODO: Make this optional with something like ~Config \n  $\"<html> <head><style>_</style></head><body><main class=\\\"document\\\">_</main></body> </html>\"\n)\n"
+
+MACRO EXPANSIONS

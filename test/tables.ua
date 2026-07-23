@@ -13,7 +13,7 @@ Table.Show
 Table
 Table.Header {"Image Table"}
 Table.Cells {
-  {"here is the image" Image.Text Image "cat.png"}
+  {"here is the image" Image.Embed Image "cat.png"}
 }
 Table.Show
 

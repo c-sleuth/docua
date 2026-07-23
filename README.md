@@ -25,6 +25,18 @@ Text and paragraphs can be add in like this
 Paragraph "hello world"
 ```
 
+## Figures
+
+Figures can be add like this
+
+```uiua
+Figure (
+  Image.Embed Image "cat.png"
+)
+Figure.Caption "this is a picture"
+Figure.Show
+```
+
 ## Tables
 
 Tables can be written out manually like this
@@ -72,4 +84,27 @@ Blockquotes can be added like this.
 Blockquote "Some quote goes here"
 Blockquote.Cite "Who said it" # optional
 Blockquote.Show
+```
+
+## List
+
+Lists can be added like this
+
+```uiua
+List {"foo" "bar"}
+List.Show 
+```
+
+_Note: only unordered lists are supported as of right now._
+
+## Term List
+
+Term Lists can be added like this
+
+```uiua
+Term {
+  {"Coffee" "Black hot drink"}
+  {"Milk" "White cold drink"}
+}
+Term.Show
 ```
